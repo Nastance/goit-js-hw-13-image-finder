@@ -42,12 +42,12 @@ function clearGalleryContainer() {
 }
 
 function scrollPage() {
+ let value = document.body.scrollHeight;
      setTimeout(() => {
+      window.scrollTo({
+        top: value,
+        left: 0,
+        behavior: 'smooth',
+      });
     }, 500);
-
-// const element = document.getElementById('.my-element-selector');
-// element.scrollIntoView({
-//   behavior: 'smooth',
-//   block: 'end',
-// });
 }
